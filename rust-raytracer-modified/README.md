@@ -1,4 +1,18 @@
+# rust-raytracer-modified
+
+> [!NOTE]
+> This is a modified version of the original [rust-raytracer](https://github.com/dps/rust-raytracer) project, used as a real-world macro-benchmark for evaluating `deloxide`.
+
+## Purpose
+
+The `raytracer` application serves as a compute-intensive workload that uses parallelism to speed up rendering. We use this modified version to evaluate `deloxide`'s performance impact on a realistic application, rather than just micro-benchmarks.
+
+It tests how `deloxide` handles synchronization in a scenario with significant computational work between lock acquisitions.
+
+---
+
 # rust-raytracer
+
 
 An implementation of a very simple raytracer based on [Ray Tracing in One Weekend
  by Peter Shirley](https://raytracing.github.io/books/RayTracingInOneWeekend.html) in Rust. I used this project to *learn* Rust from scratch - the code may not be perfectly idiomatic, or even good, but it does make pretty pictures.
