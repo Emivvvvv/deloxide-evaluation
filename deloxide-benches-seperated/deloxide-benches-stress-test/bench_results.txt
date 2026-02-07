@@ -1,0 +1,627 @@
+cargo bench
+   Compiling proc-macro2 v1.0.103
+   Compiling unicode-ident v1.0.22
+   Compiling quote v1.0.42
+   Compiling stable_deref_trait v1.2.1
+   Compiling cfg-if v1.0.4
+   Compiling libc v0.2.177
+   Compiling serde_core v1.0.228
+   Compiling zerocopy v0.8.27
+   Compiling autocfg v1.5.0
+   Compiling serde v1.0.228
+   Compiling litemap v0.8.1
+   Compiling writeable v0.6.2
+   Compiling num-traits v0.2.19
+   Compiling icu_normalizer_data v2.1.1
+   Compiling smallvec v1.15.1
+   Compiling icu_properties_data v2.1.1
+   Compiling getrandom v0.3.4
+   Compiling utf8parse v0.2.2
+   Compiling syn v2.0.110
+   Compiling crossbeam-utils v0.8.21
+   Compiling anstyle-parse v0.2.7
+   Compiling colorchoice v1.0.4
+   Compiling anstyle v1.0.13
+   Compiling core-foundation-sys v0.8.7
+   Compiling paste v1.0.15
+   Compiling serde_json v1.0.145
+   Compiling anstyle-query v1.1.5
+   Compiling is_terminal_polyfill v1.70.2
+   Compiling anstream v0.6.21
+   Compiling crc32fast v1.5.0
+   Compiling ryu v1.0.20
+   Compiling utf8_iter v1.0.4
+   Compiling memchr v2.7.6
+   Compiling clap_lex v0.7.6
+   Compiling percent-encoding v2.3.2
+   Compiling byteorder v1.5.0
+   Compiling itoa v1.0.15
+   Compiling rustix v1.1.2
+   Compiling strsim v0.11.1
+   Compiling parking_lot_core v0.9.12
+   Compiling heck v0.5.0
+   Compiling crossbeam-epoch v0.9.18
+   Compiling clap_builder v4.5.53
+   Compiling form_urlencoded v1.2.2
+   Compiling rand_core v0.9.3
+   Compiling errno v0.3.14
+   Compiling adler2 v2.0.1
+   Compiling simd-adler32 v0.3.7
+   Compiling rayon-core v1.13.0
+   Compiling scopeguard v1.2.0
+   Compiling bitflags v2.10.0
+   Compiling anyhow v1.0.100
+   Compiling synstructure v0.13.2
+   Compiling either v1.15.0
+   Compiling lock_api v0.4.14
+   Compiling miniz_oxide v0.8.9
+   Compiling rmp v0.8.14
+   Compiling crossbeam-deque v0.8.6
+   Compiling core-foundation v0.10.1
+   Compiling iana-time-zone v0.1.64
+   Compiling once_cell v1.21.3
+   Compiling plotters-backend v0.3.7
+   Compiling ciborium-io v0.2.2
+   Compiling regex-syntax v0.8.8
+   Compiling log v0.4.28
+   Compiling fastrand v2.3.0
+   Compiling tempfile v3.23.0
+   Compiling plotters-svg v0.3.7
+   Compiling zerofrom-derive v0.1.6
+   Compiling yoke-derive v0.8.1
+   Compiling zerovec-derive v0.11.2
+   Compiling displaydoc v0.2.5
+   Compiling zerocopy-derive v0.8.27
+   Compiling serde_derive v1.0.228
+   Compiling zerofrom v0.1.6
+   Compiling clap_derive v4.5.49
+   Compiling regex-automata v0.4.13
+   Compiling yoke v0.8.1
+   Compiling chrono v0.4.42
+   Compiling zerovec v0.11.5
+   Compiling tinystr v0.8.2
+   Compiling potential_utf v0.1.4
+   Compiling zerotrie v0.2.3
+   Compiling icu_locale_core v2.1.1
+   Compiling icu_collections v2.1.1
+   Compiling ppv-lite86 v0.2.21
+   Compiling icu_provider v2.1.1
+   Compiling rand_chacha v0.9.0
+   Compiling icu_properties v2.1.1
+   Compiling icu_normalizer v2.1.1
+   Compiling idna_adapter v1.2.1
+   Compiling idna v1.1.0
+   Compiling half v2.7.1
+   Compiling url v2.5.7
+   Compiling clap v4.5.53
+   Compiling ciborium-ll v0.2.2
+   Compiling rmp-serde v1.3.0
+   Compiling rand v0.9.2
+   Compiling flate2 v1.1.5
+   Compiling webbrowser v1.0.6
+   Compiling parking_lot v0.12.5
+   Compiling itertools v0.13.0
+   Compiling fxhash v0.2.1
+   Compiling base64 v0.22.1
+   Compiling lazy_static v1.5.0
+   Compiling same-file v1.0.6
+   Compiling cast v0.3.0
+   Compiling walkdir v2.5.0
+   Compiling rayon v1.11.0
+   Compiling ciborium v0.2.2
+   Compiling tinytemplate v1.2.1
+   Compiling criterion-plot v0.6.0
+   Compiling regex v1.12.2
+   Compiling plotters v0.3.7
+   Compiling anes v0.1.6
+   Compiling oorandom v11.1.5
+   Compiling deloxide v1.0.0
+   Compiling criterion v0.7.0
+   Compiling deloxide-benches-stress-test v0.1.0 (/Users/emivvvvv/Documents/GitHub/deloxide-evaluation/deloxide-benches-seperated/deloxide-benches-stress-test)
+    Finished `bench` profile [optimized] target(s) in 28.93s
+     Running unittests src/main.rs (target/release/deps/deloxide_benches_stress_test-b4637f3728552ce8)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running benches/bounded_mpmc_stress_component.rs (target/release/deps/bounded_mpmc_stress_component-10d3377b593165b0)
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+Gnuplot not found, using plotters backend
+bounded_mpmc_deloxide_with_component_stress_4096msgs
+                        time:   [18.302 ms 18.418 ms 18.505 ms]
+
+bounded_mpmc_deloxide_with_component_stress_16384msgs
+                        time:   [75.082 ms 75.341 ms 75.826 ms]
+Found 2 outliers among 10 measurements (20.00%)
+  1 (10.00%) high mild
+  1 (10.00%) high severe
+
+     Running benches/bounded_mpmc_stress_random_aggressive.rs (target/release/deps/bounded_mpmc_stress_random_aggressive-8ac9d02b3a084b04)
+Gnuplot not found, using plotters backend
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+bounded_mpmc_stress_random_aggressive_4096msgs
+                        time:   [18.361 ms 18.457 ms 18.630 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+
+bounded_mpmc_stress_random_aggressive_16384msgs
+                        time:   [75.013 ms 75.289 ms 75.686 ms]
+Found 2 outliers among 10 measurements (20.00%)
+  1 (10.00%) low mild
+  1 (10.00%) high severe
+
+     Running benches/bounded_mpmc_stress_random_default.rs (target/release/deps/bounded_mpmc_stress_random_default-c8e3c7f9a1fa301e)
+Gnuplot not found, using plotters backend
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+bounded_mpmc_stress_random_default_4096msgs
+                        time:   [18.322 ms 18.420 ms 18.615 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+
+bounded_mpmc_stress_random_default_16384msgs
+                        time:   [74.930 ms 75.303 ms 75.758 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+
+     Running benches/bounded_mpmc_stress_random_gentle.rs (target/release/deps/bounded_mpmc_stress_random_gentle-ce1c5ba49cc03fed)
+Gnuplot not found, using plotters backend
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+bounded_mpmc_stress_random_gentle_4096msgs
+                        time:   [1.3703 ms 1.3724 ms 1.3738 ms]
+Found 2 outliers among 10 measurements (20.00%)
+  1 (10.00%) low severe
+  1 (10.00%) low mild
+
+bounded_mpmc_stress_random_gentle_16384msgs
+                        time:   [5.2943 ms 5.3087 ms 5.3303 ms]
+Found 2 outliers among 10 measurements (20.00%)
+  1 (10.00%) low mild
+  1 (10.00%) high severe
+
+     Running benches/condvar_ping_pong_stress_component.rs (target/release/deps/condvar_ping_pong_stress_component-6c64353986f0b932)
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+Gnuplot not found, using plotters backend
+condvar_ping_pong_deloxide_with_component_stress
+                        time:   [22.336 µs 22.380 µs 22.436 µs]
+
+     Running benches/condvar_ping_pong_stress_random_aggressive.rs (target/release/deps/condvar_ping_pong_stress_random_aggressive-6da2cdc147c4071b)
+Gnuplot not found, using plotters backend
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+condvar_ping_pong_stress_random_aggressive
+                        time:   [22.458 µs 22.475 µs 22.502 µs]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+
+     Running benches/condvar_ping_pong_stress_random_default.rs (target/release/deps/condvar_ping_pong_stress_random_default-dd1c9800d4c5ef56)
+Gnuplot not found, using plotters backend
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+condvar_ping_pong_stress_random_default
+                        time:   [22.338 µs 22.363 µs 22.391 µs]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+     Running benches/condvar_ping_pong_stress_random_gentle.rs (target/release/deps/condvar_ping_pong_stress_random_gentle-25ab6176a2daa345)
+Gnuplot not found, using plotters backend
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+condvar_ping_pong_stress_random_gentle
+                        time:   [17.663 µs 17.717 µs 17.791 µs]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+
+     Running benches/producer_consumer_stress_component.rs (target/release/deps/producer_consumer_stress_component-103ce690a66a799d)
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+Gnuplot not found, using plotters backend
+producer_consumer_deloxide_with_component_stress_4x4
+                        time:   [60.700 ms 62.478 ms 64.672 ms]
+Found 2 outliers among 10 measurements (20.00%)
+  1 (10.00%) low mild
+  1 (10.00%) high mild
+
+Benchmarking producer_consumer_deloxide_with_component_stress_16x16: Warming up for 3.0000 s
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 7.6s.
+producer_consumer_deloxide_with_component_stress_16x16
+                        time:   [716.88 ms 755.32 ms 798.16 ms]
+
+Benchmarking producer_consumer_deloxide_with_component_stress_64x64: Warming up for 3.0000 s
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 100.4s.
+producer_consumer_deloxide_with_component_stress_64x64
+                        time:   [9.9541 s 10.455 s 10.885 s]
+Found 3 outliers among 10 measurements (30.00%)
+  2 (20.00%) low severe
+  1 (10.00%) high mild
+
+     Running benches/producer_consumer_stress_random_aggressive.rs (target/release/deps/producer_consumer_stress_random_aggressive-5c0d6a971163c048)
+Gnuplot not found, using plotters backend
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+producer_consumer_stress_random_aggressive_4x4
+                        time:   [54.126 ms 56.515 ms 58.595 ms]
+
+Benchmarking producer_consumer_stress_random_aggressive_16x16: Warming up for 3.0000 s
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 7.8s.
+producer_consumer_stress_random_aggressive_16x16
+                        time:   [750.32 ms 799.53 ms 857.46 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+Benchmarking producer_consumer_stress_random_aggressive_64x64: Warming up for 3.0000 s
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 70.7s.
+producer_consumer_stress_random_aggressive_64x64
+                        time:   [10.054 s 10.539 s 11.054 s]
+
+     Running benches/producer_consumer_stress_random_default.rs (target/release/deps/producer_consumer_stress_random_default-5089cf15bf9f8d0c)
+Gnuplot not found, using plotters backend
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+producer_consumer_stress_random_default_4x4
+                        time:   [58.356 ms 62.395 ms 65.703 ms]
+
+Benchmarking producer_consumer_stress_random_default_16x16: Warming up for 3.0000 s
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 6.6s.
+producer_consumer_stress_random_default_16x16
+                        time:   [644.19 ms 680.80 ms 717.01 ms]
+
+Benchmarking producer_consumer_stress_random_default_64x64: Warming up for 3.0000 s
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 40.6s.
+producer_consumer_stress_random_default_64x64
+                        time:   [9.6691 s 9.8626 s 10.034 s]
+Found 4 outliers among 10 measurements (40.00%)
+  1 (10.00%) low severe
+  1 (10.00%) low mild
+  2 (20.00%) high mild
+
+     Running benches/producer_consumer_stress_random_gentle.rs (target/release/deps/producer_consumer_stress_random_gentle-43ac1960aab4f9a3)
+Gnuplot not found, using plotters backend
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+producer_consumer_stress_random_gentle_4x4
+                        time:   [1.6003 ms 1.6355 ms 1.6577 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) low mild
+
+producer_consumer_stress_random_gentle_16x16
+                        time:   [11.394 ms 12.894 ms 14.522 ms]
+
+producer_consumer_stress_random_gentle_64x64
+                        time:   [75.179 ms 79.470 ms 88.350 ms]
+Found 2 outliers among 10 measurements (20.00%)
+  2 (20.00%) high mild
+
+     Running benches/rwlock_contention_stress_component.rs (target/release/deps/rwlock_contention_stress_component-480c5ef7067b6041)
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+Gnuplot not found, using plotters backend
+rwlock_concurrent_reads_deloxide_with_component_stress_4t
+                        time:   [10.733 ms 10.768 ms 10.799 ms]
+Found 2 outliers among 10 measurements (20.00%)
+  1 (10.00%) low mild
+  1 (10.00%) high mild
+
+rwlock_concurrent_reads_deloxide_with_component_stress_16t
+                        time:   [85.927 ms 86.020 ms 86.116 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+
+rwlock_concurrent_reads_deloxide_with_component_stress_64t
+                        time:   [353.03 ms 353.68 ms 354.48 ms]
+Found 2 outliers among 10 measurements (20.00%)
+  1 (10.00%) low mild
+  1 (10.00%) high severe
+
+     Running benches/rwlock_contention_stress_random_aggressive.rs (target/release/deps/rwlock_contention_stress_random_aggressive-3f83eca42b4d477a)
+Gnuplot not found, using plotters backend
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+rwlock_contention_stress_random_aggressive_4t
+                        time:   [10.592 ms 10.662 ms 10.754 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) low mild
+
+rwlock_contention_stress_random_aggressive_16t
+                        time:   [85.939 ms 86.081 ms 86.204 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+rwlock_contention_stress_random_aggressive_64t
+                        time:   [351.93 ms 352.73 ms 353.52 ms]
+
+     Running benches/rwlock_contention_stress_random_default.rs (target/release/deps/rwlock_contention_stress_random_default-791565d7c3f7202e)
+Gnuplot not found, using plotters backend
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+rwlock_contention_stress_random_default_4t
+                        time:   [10.522 ms 10.598 ms 10.660 ms]
+
+rwlock_contention_stress_random_default_16t
+                        time:   [86.182 ms 86.966 ms 89.087 ms]
+Found 2 outliers among 10 measurements (20.00%)
+  2 (20.00%) high severe
+
+rwlock_contention_stress_random_default_64t
+                        time:   [352.70 ms 353.16 ms 353.75 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+
+     Running benches/rwlock_contention_stress_random_gentle.rs (target/release/deps/rwlock_contention_stress_random_gentle-18407149f06b8c02)
+Gnuplot not found, using plotters backend
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+rwlock_contention_stress_random_gentle_4t
+                        time:   [332.10 µs 342.23 µs 357.27 µs]
+Found 2 outliers among 10 measurements (20.00%)
+  2 (20.00%) high mild
+
+rwlock_contention_stress_random_gentle_16t
+                        time:   [1.6223 ms 1.6318 ms 1.6531 ms]
+
+rwlock_contention_stress_random_gentle_64t
+                        time:   [10.030 ms 10.379 ms 10.719 ms]
+
+     Running benches/rwlock_micro_stress_component.rs (target/release/deps/rwlock_micro_stress_component-6afa6b3295124152)
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+Gnuplot not found, using plotters backend
+deloxide_rwlock_read_lock_unlock_with_component_stress
+                        time:   [215.84 ns 216.25 ns 216.76 ns]
+Found 10 outliers among 100 measurements (10.00%)
+  1 (1.00%) high mild
+  9 (9.00%) high severe
+
+deloxide_rwlock_write_lock_unlock_with_component_stress
+                        time:   [228.04 ns 228.37 ns 228.77 ns]
+Found 12 outliers among 100 measurements (12.00%)
+  2 (2.00%) high mild
+  10 (10.00%) high severe
+
+     Running benches/rwlock_micro_stress_random_aggressive.rs (target/release/deps/rwlock_micro_stress_random_aggressive-ff8f695473c27708)
+Gnuplot not found, using plotters backend
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+rwlock_read_stress_random_aggressive
+                        time:   [216.95 ns 217.35 ns 217.84 ns]
+Found 9 outliers among 100 measurements (9.00%)
+  3 (3.00%) high mild
+  6 (6.00%) high severe
+
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+rwlock_write_stress_random_aggressive
+                        time:   [229.64 ns 230.91 ns 232.63 ns]
+Found 11 outliers among 100 measurements (11.00%)
+  3 (3.00%) high mild
+  8 (8.00%) high severe
+
+     Running benches/rwlock_micro_stress_random_default.rs (target/release/deps/rwlock_micro_stress_random_default-c7b6aaeeddf6377c)
+Gnuplot not found, using plotters backend
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+rwlock_read_stress_random_default
+                        time:   [216.04 ns 216.61 ns 217.35 ns]
+Found 13 outliers among 100 measurements (13.00%)
+  4 (4.00%) high mild
+  9 (9.00%) high severe
+
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+rwlock_write_stress_random_default
+                        time:   [228.87 ns 229.01 ns 229.17 ns]
+Found 10 outliers among 100 measurements (10.00%)
+  3 (3.00%) high mild
+  7 (7.00%) high severe
+
+     Running benches/rwlock_micro_stress_random_gentle.rs (target/release/deps/rwlock_micro_stress_random_gentle-f469874ea23360b0)
+Gnuplot not found, using plotters backend
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+rwlock_read_stress_random_gentle
+                        time:   [52.758 ns 52.821 ns 52.898 ns]
+Found 5 outliers among 100 measurements (5.00%)
+  5 (5.00%) high severe
+
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+rwlock_write_stress_random_gentle
+                        time:   [68.102 ns 68.127 ns 68.162 ns]
+Found 9 outliers among 100 measurements (9.00%)
+  9 (9.00%) high severe
+
+     Running benches/rwlock_microburst_stress_component.rs (target/release/deps/rwlock_microburst_stress_component-5034a8dcfd08784f)
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+Gnuplot not found, using plotters backend
+rwlock_microburst_deloxide_with_component_stress_4r1w
+                        time:   [31.858 ms 31.946 ms 32.069 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+Benchmarking rwlock_microburst_deloxide_with_component_stress_6r2w: Warming up for 3.0000 s
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 5.8s or enable flat sampling.
+rwlock_microburst_deloxide_with_component_stress_6r2w
+                        time:   [103.97 ms 104.62 ms 105.34 ms]
+Found 2 outliers among 10 measurements (20.00%)
+  1 (10.00%) high mild
+  1 (10.00%) high severe
+
+     Running benches/rwlock_microburst_stress_random_aggressive.rs (target/release/deps/rwlock_microburst_stress_random_aggressive-5992ac6b469136a9)
+Gnuplot not found, using plotters backend
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+rwlock_microburst_stress_random_aggressive_4r1w
+                        time:   [31.672 ms 31.838 ms 31.961 ms]
+
+Benchmarking rwlock_microburst_stress_random_aggressive_6r2w: Warming up for 3.0000 s
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 5.7s or enable flat sampling.
+rwlock_microburst_stress_random_aggressive_6r2w
+                        time:   [103.98 ms 104.57 ms 105.58 ms]
+
+     Running benches/rwlock_microburst_stress_random_default.rs (target/release/deps/rwlock_microburst_stress_random_default-bdeaac718ec7b764)
+Gnuplot not found, using plotters backend
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+rwlock_microburst_stress_random_default_4r1w
+                        time:   [31.910 ms 32.569 ms 33.231 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+Benchmarking rwlock_microburst_stress_random_default_6r2w: Warming up for 3.0000 s
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 5.7s or enable flat sampling.
+rwlock_microburst_stress_random_default_6r2w
+                        time:   [104.63 ms 104.96 ms 105.40 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+     Running benches/rwlock_microburst_stress_random_gentle.rs (target/release/deps/rwlock_microburst_stress_random_gentle-99166b1b12fa519f)
+Gnuplot not found, using plotters backend
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+rwlock_microburst_stress_random_gentle_4r1w
+                        time:   [940.08 µs 948.52 µs 956.92 µs]
+
+rwlock_microburst_stress_random_gentle_6r2w
+                        time:   [2.9680 ms 3.0314 ms 3.1324 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+
+     Running benches/single_lock_stress_component.rs (target/release/deps/single_lock_stress_component-163668f1b607b4d4)
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+Gnuplot not found, using plotters backend
+deloxide_mutex_lock_unlock_with_component_stress
+                        time:   [228.62 ns 229.39 ns 230.30 ns]
+Found 7 outliers among 100 measurements (7.00%)
+  1 (1.00%) high mild
+  6 (6.00%) high severe
+
+     Running benches/single_lock_stress_random_aggressive.rs (target/release/deps/single_lock_stress_random_aggressive-6c7359db4dabb0cb)
+Gnuplot not found, using plotters backend
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+single_lock_stress_random_aggressive
+                        time:   [227.85 ns 228.54 ns 229.34 ns]
+Found 5 outliers among 100 measurements (5.00%)
+  1 (1.00%) high mild
+  4 (4.00%) high severe
+
+     Running benches/single_lock_stress_random_default.rs (target/release/deps/single_lock_stress_random_default-405dfffb18fe34ab)
+Gnuplot not found, using plotters backend
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+single_lock_stress_random_default
+                        time:   [229.37 ns 229.75 ns 230.15 ns]
+Found 6 outliers among 100 measurements (6.00%)
+  2 (2.00%) high mild
+  4 (4.00%) high severe
+
+     Running benches/single_lock_stress_random_gentle.rs (target/release/deps/single_lock_stress_random_gentle-c004f84843a98598)
+Gnuplot not found, using plotters backend
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+single_lock_stress_random_gentle
+                        time:   [65.714 ns 65.809 ns 65.929 ns]
+Found 21 outliers among 100 measurements (21.00%)
+  3 (3.00%) high mild
+  18 (18.00%) high severe
+

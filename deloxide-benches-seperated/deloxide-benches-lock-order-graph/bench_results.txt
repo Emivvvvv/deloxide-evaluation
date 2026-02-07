@@ -1,0 +1,257 @@
+cargo bench
+    Updating crates.io index
+     Locking 1 package to latest Rust 1.90.0-nightly compatible version
+      Adding deloxide v1.0.0
+  Downloaded zerocopy-derive v0.8.27
+  Downloaded half v2.7.1
+  Downloaded syn v2.0.110
+  Downloaded 3 crates (442.4KiB) in 0.86s
+   Compiling proc-macro2 v1.0.103
+   Compiling quote v1.0.42
+   Compiling unicode-ident v1.0.22
+   Compiling stable_deref_trait v1.2.1
+   Compiling libc v0.2.177
+   Compiling cfg-if v1.0.4
+   Compiling serde_core v1.0.228
+   Compiling zerocopy v0.8.27
+   Compiling litemap v0.8.1
+   Compiling autocfg v1.5.0
+   Compiling writeable v0.6.2
+   Compiling serde v1.0.228
+   Compiling num-traits v0.2.19
+   Compiling icu_normalizer_data v2.1.1
+   Compiling icu_properties_data v2.1.1
+   Compiling smallvec v1.15.1
+   Compiling getrandom v0.3.4
+   Compiling crossbeam-utils v0.8.21
+   Compiling utf8parse v0.2.2
+   Compiling anstyle-parse v0.2.7
+   Compiling syn v2.0.110
+   Compiling is_terminal_polyfill v1.70.2
+   Compiling anstyle v1.0.13
+   Compiling anstyle-query v1.1.5
+   Compiling core-foundation-sys v0.8.7
+   Compiling paste v1.0.15
+   Compiling serde_json v1.0.145
+   Compiling colorchoice v1.0.4
+   Compiling anstream v0.6.21
+   Compiling itoa v1.0.15
+   Compiling byteorder v1.5.0
+   Compiling crc32fast v1.5.0
+   Compiling percent-encoding v2.3.2
+   Compiling memchr v2.7.6
+   Compiling clap_lex v0.7.6
+   Compiling strsim v0.11.1
+   Compiling parking_lot_core v0.9.12
+   Compiling ryu v1.0.20
+   Compiling heck v0.5.0
+   Compiling rustix v1.1.2
+   Compiling utf8_iter v1.0.4
+   Compiling crossbeam-epoch v0.9.18
+   Compiling clap_builder v4.5.53
+   Compiling form_urlencoded v1.2.2
+   Compiling rand_core v0.9.3
+   Compiling errno v0.3.14
+   Compiling adler2 v2.0.1
+   Compiling simd-adler32 v0.3.7
+   Compiling bitflags v2.10.0
+   Compiling rayon-core v1.13.0
+   Compiling synstructure v0.13.2
+   Compiling anyhow v1.0.100
+   Compiling scopeguard v1.2.0
+   Compiling either v1.15.0
+   Compiling lock_api v0.4.14
+   Compiling miniz_oxide v0.8.9
+   Compiling rmp v0.8.14
+   Compiling crossbeam-deque v0.8.6
+   Compiling iana-time-zone v0.1.64
+   Compiling core-foundation v0.10.1
+   Compiling log v0.4.28
+   Compiling regex-syntax v0.8.8
+   Compiling plotters-backend v0.3.7
+   Compiling zerofrom-derive v0.1.6
+   Compiling yoke-derive v0.8.1
+   Compiling zerovec-derive v0.11.2
+   Compiling displaydoc v0.2.5
+   Compiling zerocopy-derive v0.8.27
+   Compiling serde_derive v1.0.228
+   Compiling clap_derive v4.5.49
+   Compiling zerofrom v0.1.6
+   Compiling ciborium-io v0.2.2
+   Compiling once_cell v1.21.3
+   Compiling fastrand v2.3.0
+   Compiling tempfile v3.23.0
+   Compiling yoke v0.8.1
+   Compiling regex-automata v0.4.13
+   Compiling zerovec v0.11.5
+   Compiling zerotrie v0.2.3
+   Compiling clap v4.5.53
+   Compiling tinystr v0.8.2
+   Compiling icu_locale_core v2.1.1
+   Compiling potential_utf v0.1.4
+   Compiling icu_collections v2.1.1
+   Compiling plotters-svg v0.3.7
+   Compiling chrono v0.4.42
+   Compiling icu_provider v2.1.1
+   Compiling icu_properties v2.1.1
+   Compiling icu_normalizer v2.1.1
+   Compiling ppv-lite86 v0.2.21
+   Compiling rand_chacha v0.9.0
+   Compiling idna_adapter v1.2.1
+   Compiling idna v1.1.0
+   Compiling half v2.7.1
+   Compiling rand v0.9.2
+   Compiling url v2.5.7
+   Compiling ciborium-ll v0.2.2
+   Compiling rmp-serde v1.3.0
+   Compiling webbrowser v1.0.6
+   Compiling flate2 v1.1.5
+   Compiling parking_lot v0.12.5
+   Compiling itertools v0.13.0
+   Compiling fxhash v0.2.1
+   Compiling cast v0.3.0
+   Compiling same-file v1.0.6
+   Compiling base64 v0.22.1
+   Compiling lazy_static v1.5.0
+   Compiling walkdir v2.5.0
+   Compiling rayon v1.11.0
+   Compiling ciborium v0.2.2
+   Compiling tinytemplate v1.2.1
+   Compiling plotters v0.3.7
+   Compiling regex v1.12.2
+   Compiling criterion-plot v0.6.0
+   Compiling anes v0.1.6
+   Compiling oorandom v11.1.5
+   Compiling deloxide v1.0.0
+   Compiling criterion v0.7.0
+   Compiling deloxide-benches-lock-order-graph v0.1.0 (/Users/emivvvvv/Documents/GitHub/deloxide-evaluation/deloxide-benches-seperated/deloxide-benches-lock-order-graph)
+    Finished `bench` profile [optimized] target(s) in 24.85s
+     Running unittests src/main.rs (target/release/deps/deloxide_benches_lock_order_graph-091ff42bcfcaa0e8)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running benches/bounded_mpmc_lock_order.rs (target/release/deps/bounded_mpmc_lock_order-0df6ae0a8adc485e)
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+Gnuplot not found, using plotters backend
+bounded_mpmc_deloxide_with_lock_order_checking_4096msgs
+                        time:   [1.1260 ms 1.1280 ms 1.1299 ms]
+Found 4 outliers among 20 measurements (20.00%)
+  3 (15.00%) low mild
+  1 (5.00%) high severe
+
+bounded_mpmc_deloxide_with_lock_order_checking_16384msgs
+                        time:   [4.3104 ms 4.3267 ms 4.3526 ms]
+Found 3 outliers among 20 measurements (15.00%)
+  3 (15.00%) high severe
+
+     Running benches/condvar_ping_pong_lock_order.rs (target/release/deps/condvar_ping_pong_lock_order-391ae853a0dbcfae)
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+Gnuplot not found, using plotters backend
+condvar_ping_pong_deloxide_with_lock_order_checking
+                        time:   [17.457 µs 17.481 µs 17.535 µs]
+Found 2 outliers among 10 measurements (20.00%)
+  2 (20.00%) high severe
+
+     Running benches/producer_consumer_lock_order.rs (target/release/deps/producer_consumer_lock_order-bef6b61c66e016ca)
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+Gnuplot not found, using plotters backend
+producer_consumer_deloxide_with_lock_order_checking_16x16
+                        time:   [31.508 ms 32.423 ms 33.209 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) low severe
+
+producer_consumer_deloxide_with_lock_order_checking_64x64
+                        time:   [546.78 ms 575.85 ms 610.91 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+
+     Running benches/rwlock_contention_lock_order.rs (target/release/deps/rwlock_contention_lock_order-a966471e6f4a56d5)
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+Gnuplot not found, using plotters backend
+rwlock_concurrent_reads_deloxide_with_lock_order_checking_4t
+                        time:   [491.90 µs 493.82 µs 495.82 µs]
+Found 2 outliers among 10 measurements (20.00%)
+  1 (10.00%) low severe
+  1 (10.00%) high mild
+
+rwlock_concurrent_reads_deloxide_with_lock_order_checking_16t
+                        time:   [2.6882 ms 2.6944 ms 2.7037 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+rwlock_concurrent_reads_deloxide_with_lock_order_checking_64t
+                        time:   [27.152 ms 28.755 ms 30.034 ms]
+Found 2 outliers among 10 measurements (20.00%)
+  1 (10.00%) low mild
+  1 (10.00%) high mild
+
+     Running benches/rwlock_micro_lock_order.rs (target/release/deps/rwlock_micro_lock_order-d3f312095e12c7a9)
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+Gnuplot not found, using plotters backend
+deloxide_rwlock_read_lock_unlock_with_lock_order_checking
+                        time:   [85.120 ns 85.190 ns 85.272 ns]
+Found 7 outliers among 100 measurements (7.00%)
+  2 (2.00%) high mild
+  5 (5.00%) high severe
+
+deloxide_rwlock_write_lock_unlock_with_lock_order_checking
+                        time:   [57.451 ns 57.495 ns 57.554 ns]
+Found 13 outliers among 100 measurements (13.00%)
+  2 (2.00%) high mild
+  11 (11.00%) high severe
+
+     Running benches/rwlock_microburst_lock_order.rs (target/release/deps/rwlock_microburst_lock_order-d088a43f77703ffd)
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+Gnuplot not found, using plotters backend
+rwlock_microburst_deloxide_with_lock_order_checking_4r1w
+                        time:   [1.3026 ms 1.3082 ms 1.3138 ms]
+Found 2 outliers among 30 measurements (6.67%)
+  1 (3.33%) low mild
+  1 (3.33%) high severe
+
+rwlock_microburst_deloxide_with_lock_order_checking_6r2w
+                        time:   [4.1943 ms 4.2339 ms 4.2802 ms]
+Found 3 outliers among 30 measurements (10.00%)
+  1 (3.33%) low mild
+  1 (3.33%) high mild
+  1 (3.33%) high severe
+
+     Running benches/single_lock_lock_order.rs (target/release/deps/single_lock_lock_order-278b78021ff8532c)
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+Gnuplot not found, using plotters backend
+deloxide_mutex_lock_unlock_with_lock_order_checking
+                        time:   [57.494 ns 57.598 ns 57.713 ns]
+Found 8 outliers among 100 measurements (8.00%)
+  5 (5.00%) high mild
+  3 (3.00%) high severe
+

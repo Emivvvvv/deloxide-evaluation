@@ -1,0 +1,339 @@
+cargo bench
+warning: struct `BoundedQueueStd` is never constructed
+  --> benches/bounded_mpmc.rs:24:8
+   |
+24 | struct BoundedQueueStd {
+   |        ^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` on by default
+
+warning: associated items `new`, `push`, and `pop` are never used
+  --> benches/bounded_mpmc.rs:36:8
+   |
+35 | impl BoundedQueueStd {
+   | -------------------- associated items in this implementation
+36 |     fn new(capacity: usize) -> Self {
+   |        ^^^
+...
+47 |     fn push(&self, value: u32) {
+   |        ^^^^
+...
+56 |     fn pop(&self) -> u32 {
+   |        ^^^
+
+warning: function `bench_bounded_mpmc_std` is never used
+  --> benches/bounded_mpmc.rs:68:4
+   |
+68 | fn bench_bounded_mpmc_std(c: &mut Criterion) {
+   |    ^^^^^^^^^^^^^^^^^^^^^^
+
+warning: struct `BoundedQueueParkingLot` is never constructed
+   --> benches/bounded_mpmc.rs:111:8
+    |
+111 | struct BoundedQueueParkingLot {
+    |        ^^^^^^^^^^^^^^^^^^^^^^
+
+warning: associated items `new`, `push`, and `pop` are never used
+   --> benches/bounded_mpmc.rs:119:8
+    |
+118 | impl BoundedQueueParkingLot {
+    | --------------------------- associated items in this implementation
+119 |     fn new(capacity: usize) -> Self {
+    |        ^^^
+...
+130 |     fn push(&self, value: u32) {
+    |        ^^^^
+...
+139 |     fn pop(&self) -> u32 {
+    |        ^^^
+
+warning: function `bench_bounded_mpmc_parking_lot` is never used
+   --> benches/bounded_mpmc.rs:151:4
+    |
+151 | fn bench_bounded_mpmc_parking_lot(c: &mut Criterion) {
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: function `bench_producer_consumer_std` is never used
+  --> benches/producer_consumer.rs:14:4
+   |
+14 | fn bench_producer_consumer_std(c: &mut Criterion) {
+   |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` on by default
+
+warning: function `bench_producer_consumer_no_deadlocks` is never used
+  --> benches/producer_consumer.rs:97:4
+   |
+97 | fn bench_producer_consumer_no_deadlocks(c: &mut Criterion) {
+   |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: function `bench_condvar_ping_pong_std` is never used
+  --> benches/condvar_ping_pong.rs:13:4
+   |
+13 | fn bench_condvar_ping_pong_std(c: &mut Criterion) {
+   |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` on by default
+
+warning: function `bench_condvar_ping_pong_parking_lot` is never used
+  --> benches/condvar_ping_pong.rs:35:4
+   |
+35 | fn bench_condvar_ping_pong_parking_lot(c: &mut Criterion) {
+   |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: function `bench_condvar_ping_pong_no_deadlocks` is never used
+  --> benches/condvar_ping_pong.rs:56:4
+   |
+56 | fn bench_condvar_ping_pong_no_deadlocks(c: &mut Criterion) {
+   |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: function `bench_rwlock_microburst_std` is never used
+  --> benches/rwlock_microburst.rs:24:4
+   |
+24 | fn bench_rwlock_microburst_std(c: &mut Criterion) {
+   |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` on by default
+
+warning: function `bench_rwlock_microburst_parking_lot` is never used
+  --> benches/rwlock_microburst.rs:74:4
+   |
+74 | fn bench_rwlock_microburst_parking_lot(c: &mut Criterion) {
+   |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: function `bench_rwlock_microburst_no_deadlocks` is never used
+   --> benches/rwlock_microburst.rs:124:4
+    |
+124 | fn bench_rwlock_microburst_no_deadlocks(c: &mut Criterion) {
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: `deloxide-benches` (bench "bounded_mpmc") generated 6 warnings
+warning: `deloxide-benches` (bench "producer_consumer") generated 2 warnings
+warning: `deloxide-benches` (bench "condvar_ping_pong") generated 3 warnings
+warning: `deloxide-benches` (bench "rwlock_microburst") generated 3 warnings
+    Finished `bench` profile [optimized] target(s) in 0.06s
+     Running unittests src/lib.rs (target/release/deps/deloxide_benches-a84a013a663480dc)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running benches/bounded_mpmc.rs (target/release/deps/bounded_mpmc-7ae03f7fe6f86457)
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+Gnuplot not found, using plotters backend
+bounded_mpmc_deloxide_4096msgs
+                        time:   [844.77 µs 857.50 µs 867.07 µs]
+
+bounded_mpmc_deloxide_16384msgs
+                        time:   [2.9469 ms 2.9612 ms 2.9722 ms]
+Found 2 outliers among 20 measurements (10.00%)
+  1 (5.00%) low severe
+  1 (5.00%) low mild
+
+     Running benches/condvar_ping_pong.rs (target/release/deps/condvar_ping_pong-52b2bf73902be7ad)
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+Gnuplot not found, using plotters backend
+condvar_ping_pong_deloxide
+                        time:   [17.407 µs 17.480 µs 17.554 µs]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+
+     Running benches/producer_consumer.rs (target/release/deps/producer_consumer-9249fa113a58507d)
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+Gnuplot not found, using plotters backend
+producer_consumer_parking_lot_4x4
+                        time:   [215.33 µs 218.04 µs 222.33 µs]
+Found 2 outliers among 10 measurements (20.00%)
+  1 (10.00%) low mild
+  1 (10.00%) high mild
+
+producer_consumer_parking_lot_16x16
+                        time:   [1.2370 ms 1.2507 ms 1.2613 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) low mild
+
+producer_consumer_parking_lot_64x64
+                        time:   [7.1901 ms 7.4530 ms 7.7231 ms]
+
+producer_consumer_deloxide_4x4
+                        time:   [352.16 µs 389.18 µs 410.69 µs]
+
+producer_consumer_deloxide_16x16
+                        time:   [2.6685 ms 2.7602 ms 2.8711 ms]
+
+producer_consumer_deloxide_64x64
+                        time:   [22.261 ms 25.079 ms 26.854 ms]
+
+     Running benches/rwlock_contention.rs (target/release/deps/rwlock_contention-0835b5963fd70422)
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+Gnuplot not found, using plotters backend
+rwlock_concurrent_reads_std_4t
+                        time:   [257.21 µs 258.75 µs 261.55 µs]
+Found 2 outliers among 10 measurements (20.00%)
+  1 (10.00%) high mild
+  1 (10.00%) high severe
+
+rwlock_concurrent_reads_std_16t
+                        time:   [7.0512 ms 7.1496 ms 7.2853 ms]
+
+rwlock_concurrent_reads_std_64t
+                        time:   [32.873 ms 33.675 ms 34.562 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) low mild
+
+rwlock_concurrent_reads_parking_lot_4t
+                        time:   [307.67 µs 308.98 µs 310.78 µs]
+Found 2 outliers among 10 measurements (20.00%)
+  2 (20.00%) high mild
+
+rwlock_concurrent_reads_parking_lot_16t
+                        time:   [3.2113 ms 3.2216 ms 3.2316 ms]
+
+rwlock_concurrent_reads_parking_lot_64t
+                        time:   [15.187 ms 15.239 ms 15.276 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) low mild
+
+rwlock_concurrent_reads_no_deadlocks_4t
+                        time:   [24.621 ms 24.642 ms 24.664 ms]
+Found 2 outliers among 10 measurements (20.00%)
+  1 (10.00%) low mild
+  1 (10.00%) high mild
+
+rwlock_concurrent_reads_deloxide_4t
+                        time:   [346.23 µs 353.13 µs 361.11 µs]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+rwlock_concurrent_reads_deloxide_16t
+                        time:   [1.7890 ms 1.7943 ms 1.8000 ms]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) low mild
+
+rwlock_concurrent_reads_deloxide_64t
+                        time:   [13.542 ms 13.757 ms 14.007 ms]
+Found 3 outliers among 10 measurements (30.00%)
+  1 (10.00%) low mild
+  1 (10.00%) high mild
+  1 (10.00%) high severe
+
+     Running benches/rwlock_micro.rs (target/release/deps/rwlock_micro-8705b2513fa293d1)
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+Gnuplot not found, using plotters backend
+std_rwlock_read_lock_unlock
+                        time:   [13.476 ns 13.520 ns 13.570 ns]
+Found 2 outliers among 100 measurements (2.00%)
+  2 (2.00%) high mild
+
+std_rwlock_write_lock_unlock
+                        time:   [9.5536 ns 9.5565 ns 9.5595 ns]
+Found 10 outliers among 100 measurements (10.00%)
+  1 (1.00%) low severe
+  1 (1.00%) low mild
+  2 (2.00%) high mild
+  6 (6.00%) high severe
+
+parking_lot_rwlock_read_lock_unlock
+                        time:   [15.559 ns 15.589 ns 15.622 ns]
+Found 4 outliers among 100 measurements (4.00%)
+  3 (3.00%) high mild
+  1 (1.00%) high severe
+
+parking_lot_rwlock_write_lock_unlock
+                        time:   [12.173 ns 12.180 ns 12.187 ns]
+Found 12 outliers among 100 measurements (12.00%)
+  3 (3.00%) high mild
+  9 (9.00%) high severe
+
+no_deadlocks_rwlock_read_lock_unlock
+                        time:   [10.553 µs 10.562 µs 10.574 µs]
+Found 6 outliers among 100 measurements (6.00%)
+  2 (2.00%) high mild
+  4 (4.00%) high severe
+
+no_deadlocks_rwlock_write_lock_unlock
+                        time:   [10.566 µs 10.575 µs 10.585 µs]
+Found 4 outliers among 100 measurements (4.00%)
+  1 (1.00%) high mild
+  3 (3.00%) high severe
+
+deloxide_rwlock_read_lock_unlock
+                        time:   [61.609 ns 61.703 ns 61.817 ns]
+Found 10 outliers among 100 measurements (10.00%)
+  2 (2.00%) high mild
+  8 (8.00%) high severe
+
+deloxide_rwlock_write_lock_unlock
+                        time:   [13.762 ns 13.767 ns 13.772 ns]
+Found 9 outliers among 100 measurements (9.00%)
+  5 (5.00%) high mild
+  4 (4.00%) high severe
+
+     Running benches/rwlock_microburst.rs (target/release/deps/rwlock_microburst-f476e277881f8325)
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+Gnuplot not found, using plotters backend
+rwlock_microburst_deloxide_4r1w
+                        time:   [1.0612 ms 1.0686 ms 1.0761 ms]
+Found 2 outliers among 30 measurements (6.67%)
+  1 (3.33%) low mild
+  1 (3.33%) high mild
+
+rwlock_microburst_deloxide_6r2w
+                        time:   [3.2300 ms 3.2672 ms 3.3048 ms]
+Found 2 outliers among 30 measurements (6.67%)
+  2 (6.67%) high mild
+
+     Running benches/single_lock.rs (target/release/deps/single_lock-f2cf1bdf4920a991)
+
+▄ ▄▖▖ ▄▖▖▖▄▖▄ ▄▖    ▗   ▄▖  ▄▖
+▌▌▙▖▌ ▌▌▚▘▐ ▌▌▙▖  ▌▌▜   ▛▌  ▛▌
+▙▘▙▖▙▖▙▌▌▌▟▖▙▘▙▖  ▚▘▟▖▗ █▌▗ █▌
+
+Gnuplot not found, using plotters backend
+std_mutex_lock_unlock   time:   [8.4691 ns 8.4728 ns 8.4771 ns]
+Found 8 outliers among 100 measurements (8.00%)
+  3 (3.00%) high mild
+  5 (5.00%) high severe
+
+parking_lot_mutex_lock_unlock
+                        time:   [9.7065 ns 9.7107 ns 9.7153 ns]
+Found 11 outliers among 100 measurements (11.00%)
+  1 (1.00%) low mild
+  10 (10.00%) high severe
+
+no_deadlocks_mutex_lock_unlock
+                        time:   [10.351 µs 10.377 µs 10.425 µs]
+Found 6 outliers among 100 measurements (6.00%)
+  1 (1.00%) high mild
+  5 (5.00%) high severe
+
+deloxide_mutex_lock_unlock
+                        time:   [10.337 ns 10.355 ns 10.377 ns]
+Found 16 outliers among 100 measurements (16.00%)
+  4 (4.00%) high mild
+  12 (12.00%) high severe
+

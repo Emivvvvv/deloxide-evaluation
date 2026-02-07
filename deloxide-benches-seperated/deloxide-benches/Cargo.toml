@@ -1,0 +1,57 @@
+[package]
+name = "deloxide-benches"
+version = "0.2.0"
+edition = "2024"
+
+[dependencies]
+deloxide = { version = "1.0" }
+parking_lot = { version = "0.12.4", features=["deadlock_detection"]}
+no_deadlocks = "1.3.2"
+
+[dev-dependencies]
+criterion = "0.7.0"
+rand = "0.8"
+
+[features]
+default = []
+
+# Core benchmarks - Mutex, RWLock, Condvar (baseline only, no features)
+
+[[bench]]
+name = "single_lock"
+path = "benches/single_lock.rs"
+harness = false
+
+[[bench]]
+name = "producer_consumer"
+path = "benches/producer_consumer.rs"
+harness = false
+
+[[bench]]
+name = "rwlock_micro"
+path = "benches/rwlock_micro.rs"
+harness = false
+
+[[bench]]
+name = "rwlock_contention"
+path = "benches/rwlock_contention.rs"
+harness = false
+
+[[bench]]
+name = "condvar_ping_pong"
+path = "benches/condvar_ping_pong.rs"
+harness = false
+
+# # Specialized benchmarks - Complex patterns
+
+[[bench]]
+name = "bounded_mpmc"
+path = "benches/bounded_mpmc.rs"
+harness = false
+
+[[bench]]
+name = "rwlock_microburst"
+path = "benches/rwlock_microburst.rs"
+harness = false
+
+

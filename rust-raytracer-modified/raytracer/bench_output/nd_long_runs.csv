@@ -1,0 +1,3 @@
+Configuration,Resolution,AvgTime(ms),StdDev(ms),Locks,AvgRSS(MB)
+No Deadlocks,1280x720,320182.40,380455.08,57600,38
+No Deadlocks,1920x1080,343375.10,449822.67,129600,43

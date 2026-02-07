@@ -1,0 +1,41 @@
+=== Benchmarking 426x240 ===
+  std::sync: .......... Done. Avg: 814.20ms +/- 44.58ms, Locks: 6480, RSS: 36MB
+  parking_lot: .......... Done. Avg: 803.40ms +/- 8.21ms, Locks: 6480, RSS: 38MB
+  Deloxide (Default): .......... Done. Avg: 793.30ms +/- 3.92ms, Locks: 6480, RSS: 38MB
+  Deloxide (Graph): .......... Done. Avg: 795.10ms +/- 6.26ms, Locks: 6480, RSS: 40MB
+  Stress (Gentle): .......... Done. Avg: 795.90ms +/- 5.93ms, Locks: 6480, RSS: 38MB
+  Stress (Random): .......... Done. Avg: 814.10ms +/- 18.96ms, Locks: 6480, RSS: 39MB
+  Stress (Aggressive): .......... Done. Avg: 809.60ms +/- 19.02ms, Locks: 6480, RSS: 38MB
+  Stress (Component): .......... Done. Avg: 809.20ms +/- 11.74ms, Locks: 6480, RSS: 38MB
+  No Deadlocks: .......... Done. Avg: 22718.50ms +/- 21288.80ms, Locks: 6480, RSS: 38MB
+
+=== Benchmarking 854x480 ===
+  std::sync: .......... Done. Avg: 3193.20ms +/- 73.27ms, Locks: 25920, RSS: 37MB
+  parking_lot: .......... Done. Avg: 3207.50ms +/- 18.64ms, Locks: 25920, RSS: 38MB
+  Deloxide (Default): .......... Done. Avg: 3174.10ms +/- 25.94ms, Locks: 25920, RSS: 38MB
+  Deloxide (Graph): .......... Done. Avg: 3194.20ms +/- 9.75ms, Locks: 25920, RSS: 39MB
+  Stress (Gentle): .......... Done. Avg: 3193.30ms +/- 21.26ms, Locks: 25920, RSS: 39MB
+  Stress (Random): .......... Done. Avg: 4939.50ms +/- 487.62ms, Locks: 25920, RSS: 37MB
+  Stress (Aggressive): .......... Done. Avg: 4588.10ms +/- 876.02ms, Locks: 25920, RSS: 38MB
+  Stress (Component): .......... Done. Avg: 4615.70ms +/- 485.65ms, Locks: 25920, RSS: 39MB
+  No Deadlocks: .......... Done. Avg: 163456.90ms +/- 237943.43ms, Locks: 25920, RSS: 39MB
+
+=== Benchmarking 1280x720 ===
+  std::sync: .......... Done. Avg: 7316.40ms +/- 379.07ms, Locks: 57600, RSS: 38MB
+  parking_lot: .......... Done. Avg: 7193.10ms +/- 191.89ms, Locks: 57600, RSS: 38MB
+  Deloxide (Default): .......... Done. Avg: 7096.20ms +/- 39.97ms, Locks: 57600, RSS: 40MB
+  Deloxide (Graph): .......... Done. Avg: 7381.70ms +/- 533.83ms, Locks: 57600, RSS: 40MB
+  Stress (Gentle): .......... Done. Avg: 7326.40ms +/- 70.56ms, Locks: 57600, RSS: 43MB
+  Stress (Random): .......... Done. Avg: 7885.20ms +/- 1156.78ms, Locks: 57600, RSS: 40MB
+  Stress (Aggressive): .......... Done. Avg: 7229.70ms +/- 61.01ms, Locks: 57600, RSS: 38MB
+  Stress (Component): .......... Done. Avg: 7215.80ms +/- 47.56ms, Locks: 57600, RSS: 38MB
+
+=== Benchmarking 1920x1080 ===
+  std::sync: .......... Done. Avg: 16103.30ms +/- 671.74ms, Locks: 129600, RSS: 42MB
+  parking_lot: .......... Done. Avg: 16069.40ms +/- 170.30ms, Locks: 129600, RSS: 43MB
+  Deloxide (Default): .......... Done. Avg: 15872.90ms +/- 26.20ms, Locks: 129600, RSS: 45MB
+  Deloxide (Graph): .......... Done. Avg: 15889.90ms +/- 35.22ms, Locks: 129600, RSS: 43MB
+  Stress (Gentle): .......... Done. Avg: 15945.00ms +/- 218.17ms, Locks: 129600, RSS: 45MB
+  Stress (Random): .......... Done. Avg: 16213.40ms +/- 282.08ms, Locks: 129600, RSS: 45MB
+  Stress (Aggressive): .......... Done. Avg: 16245.30ms +/- 196.81ms, Locks: 129600, RSS: 43MB
+  Stress (Component): .......... Done. Avg: 16260.70ms +/- 197.90ms, Locks: 129600, RSS: 46MB

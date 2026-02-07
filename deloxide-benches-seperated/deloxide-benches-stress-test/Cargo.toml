@@ -1,0 +1,157 @@
+[package]
+name = "deloxide-benches-stress-test"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+deloxide = { version = "1.0"}
+
+[dev-dependencies]
+criterion = "0.7.0"
+
+[features]
+default = ["stress-test"]
+stress-test = ["deloxide/stress-test"]
+
+# Stress test benchmarks - Random and Component variants
+
+
+[[bench]]
+name = "bounded_mpmc_stress_component"
+path = "benches/bounded_mpmc_stress_component.rs"
+harness = false
+
+[[bench]]
+name = "bounded_mpmc_stress_random_aggressive"
+path = "benches/bounded_mpmc_stress_random_aggressive.rs"
+harness = false
+
+[[bench]]
+name = "bounded_mpmc_stress_random_default"
+path = "benches/bounded_mpmc_stress_random_default.rs"
+harness = false
+
+[[bench]]
+name = "bounded_mpmc_stress_random_gentle"
+path = "benches/bounded_mpmc_stress_random_gentle.rs"
+harness = false
+
+[[bench]]
+name = "condvar_ping_pong_stress_component"
+path = "benches/condvar_ping_pong_stress_component.rs"
+harness = false
+
+[[bench]]
+name = "condvar_ping_pong_stress_random_aggressive"
+path = "benches/condvar_ping_pong_stress_random_aggressive.rs"
+harness = false
+
+[[bench]]
+name = "condvar_ping_pong_stress_random_default"
+path = "benches/condvar_ping_pong_stress_random_default.rs"
+harness = false
+
+[[bench]]
+name = "condvar_ping_pong_stress_random_gentle"
+path = "benches/condvar_ping_pong_stress_random_gentle.rs"
+harness = false
+
+[[bench]]
+name = "producer_consumer_stress_component"
+path = "benches/producer_consumer_stress_component.rs"
+harness = false
+
+[[bench]]
+name = "producer_consumer_stress_random_aggressive"
+path = "benches/producer_consumer_stress_random_aggressive.rs"
+harness = false
+
+[[bench]]
+name = "producer_consumer_stress_random_default"
+path = "benches/producer_consumer_stress_random_default.rs"
+harness = false
+
+[[bench]]
+name = "producer_consumer_stress_random_gentle"
+path = "benches/producer_consumer_stress_random_gentle.rs"
+harness = false
+
+[[bench]]
+name = "rwlock_contention_stress_component"
+path = "benches/rwlock_contention_stress_component.rs"
+harness = false
+
+[[bench]]
+name = "rwlock_contention_stress_random_aggressive"
+path = "benches/rwlock_contention_stress_random_aggressive.rs"
+harness = false
+
+[[bench]]
+name = "rwlock_contention_stress_random_default"
+path = "benches/rwlock_contention_stress_random_default.rs"
+harness = false
+
+[[bench]]
+name = "rwlock_contention_stress_random_gentle"
+path = "benches/rwlock_contention_stress_random_gentle.rs"
+harness = false
+
+[[bench]]
+name = "rwlock_micro_stress_component"
+path = "benches/rwlock_micro_stress_component.rs"
+harness = false
+
+[[bench]]
+name = "rwlock_micro_stress_random_aggressive"
+path = "benches/rwlock_micro_stress_random_aggressive.rs"
+harness = false
+
+[[bench]]
+name = "rwlock_micro_stress_random_default"
+path = "benches/rwlock_micro_stress_random_default.rs"
+harness = false
+
+[[bench]]
+name = "rwlock_micro_stress_random_gentle"
+path = "benches/rwlock_micro_stress_random_gentle.rs"
+harness = false
+
+[[bench]]
+name = "rwlock_microburst_stress_component"
+path = "benches/rwlock_microburst_stress_component.rs"
+harness = false
+
+[[bench]]
+name = "rwlock_microburst_stress_random_aggressive"
+path = "benches/rwlock_microburst_stress_random_aggressive.rs"
+harness = false
+
+[[bench]]
+name = "rwlock_microburst_stress_random_default"
+path = "benches/rwlock_microburst_stress_random_default.rs"
+harness = false
+
+[[bench]]
+name = "rwlock_microburst_stress_random_gentle"
+path = "benches/rwlock_microburst_stress_random_gentle.rs"
+harness = false
+
+[[bench]]
+name = "single_lock_stress_component"
+path = "benches/single_lock_stress_component.rs"
+harness = false
+
+[[bench]]
+name = "single_lock_stress_random_aggressive"
+path = "benches/single_lock_stress_random_aggressive.rs"
+harness = false
+
+[[bench]]
+name = "single_lock_stress_random_default"
+path = "benches/single_lock_stress_random_default.rs"
+harness = false
+
+[[bench]]
+name = "single_lock_stress_random_gentle"
+path = "benches/single_lock_stress_random_gentle.rs"
+harness = false

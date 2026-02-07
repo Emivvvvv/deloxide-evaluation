@@ -1,0 +1,57 @@
+[package]
+name = "deloxide-benches-lock-order-graph"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+deloxide = { version = "1.0"}
+
+[dev-dependencies]
+criterion = "0.7.0"
+
+[features]
+default = ["lock-order-graph"]
+lock-order-graph = ["deloxide/lock-order-graph"]
+
+# Lock order checking benchmarks
+
+# Mutex micro benchmark
+[[bench]]
+name = "single_lock_lock_order"
+path = "benches/single_lock_lock_order.rs"
+harness = false
+
+# Mutex scalability benchmark
+[[bench]]
+name = "producer_consumer_lock_order"
+path = "benches/producer_consumer_lock_order.rs"
+harness = false
+
+# RwLock micro benchmark
+[[bench]]
+name = "rwlock_micro_lock_order"
+path = "benches/rwlock_micro_lock_order.rs"
+harness = false
+
+# RwLock scalability benchmark
+[[bench]]
+name = "rwlock_contention_lock_order"
+path = "benches/rwlock_contention_lock_order.rs"
+harness = false
+
+## Condvar micro benchmark
+[[bench]]
+name = "condvar_ping_pong_lock_order"
+path = "benches/condvar_ping_pong_lock_order.rs"
+harness = false
+
+# Specialized lock order benchmarks
+[[bench]]
+name = "bounded_mpmc_lock_order"
+path = "benches/bounded_mpmc_lock_order.rs"
+harness = false
+
+[[bench]]
+name = "rwlock_microburst_lock_order"
+path = "benches/rwlock_microburst_lock_order.rs"
+harness = false

@@ -1,0 +1,5 @@
+=== Benchmarking ND (No Deadlocks) at 1280x720 ===
+  No Deadlocks: .......... Done. Avg: 320182.40ms +/- 380455.08ms, Locks: 57600, RSS: 38MB
+
+=== Benchmarking ND (No Deadlocks) at 1920x1080 ===
+  No Deadlocks: .......... Done. Avg: 343375.10ms +/- 449822.67ms, Locks: 129600, RSS: 43MB
