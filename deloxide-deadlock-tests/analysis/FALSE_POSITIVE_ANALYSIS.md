@@ -11,78 +11,78 @@ This analysis verifies two types of false positive tests:
 
 | Test                                                      | Type           | Detector   |   Runs |   Flagged |   Expected |   False Positives |   Avg Time (s) | Status                  |
 |:----------------------------------------------------------|:---------------|:-----------|-------:|----------:|-----------:|------------------:|---------------:|:------------------------|
-| complex_lock_order_fp_deloxide                            | Lock Order FP  | Wait-For   |      1 |         0 |          0 |                 0 |         0.058  | ✅ PASS                  |
-| complex_lock_order_fp_deloxide_aggressive                 | Lock Order FP  | Wait-For   |      1 |         0 |          0 |                 0 |         0.0832 | ✅ PASS                  |
-| complex_lock_order_fp_deloxide_component_based_delays     | Lock Order FP  | Wait-For   |      1 |         0 |          0 |                 0 |         0.068  | ✅ PASS                  |
-| complex_lock_order_fp_deloxide_gentle                     | Lock Order FP  | Wait-For   |      1 |         0 |          0 |                 0 |         0.0563 | ✅ PASS                  |
-| complex_lock_order_fp_deloxide_lock_order                 | Lock Order FP  | Lock Order |      1 |         1 |          0 |                 0 |         0.0573 | ❌ KNOWN FP (Lock Order) |
-| complex_lock_order_fp_deloxide_random_default             | Lock Order FP  | Wait-For   |      1 |         0 |          0 |                 0 |         0.0601 | ✅ PASS                  |
-| complex_lock_order_fp_no_deadlocks                        | Lock Order FP  | Wait-For   |      1 |         0 |          0 |                 0 |         0.056  | ✅ PASS                  |
-| complex_lock_order_fp_parking_lot                         | Lock Order FP  | Wait-For   |      1 |         0 |          0 |                 0 |         0.0542 | ✅ PASS                  |
-| conditional_locking_fp_deloxide                           | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |        24.8585 | ✅ PASS                  |
-| conditional_locking_fp_deloxide_aggressive                | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |        25.5446 | ✅ PASS                  |
-| conditional_locking_fp_deloxide_component_based_delays    | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |        25.193  | ✅ PASS                  |
-| conditional_locking_fp_deloxide_gentle                    | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |        24.877  | ✅ PASS                  |
-| conditional_locking_fp_deloxide_lock_order                | Traditional FP | Lock Order |      1 |         0 |          0 |                 0 |        24.8747 | ✅ PASS                  |
-| conditional_locking_fp_deloxide_random_default            | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |        24.9991 | ✅ PASS                  |
-| conditional_locking_fp_no_deadlocks                       | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |        78.6235 | ✅ PASS                  |
-| conditional_locking_fp_parking_lot                        | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |        24.4613 | ✅ PASS                  |
-| four_hier_fp_deloxide                                     | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |         0.6103 | ✅ PASS                  |
-| four_hier_fp_deloxide_aggressive                          | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |         0.6309 | ✅ PASS                  |
-| four_hier_fp_deloxide_component_based_delays              | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |         0.621  | ✅ PASS                  |
-| four_hier_fp_deloxide_gentle                              | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |         0.6218 | ✅ PASS                  |
-| four_hier_fp_deloxide_lock_order                          | Traditional FP | Lock Order |      1 |         0 |          0 |                 0 |         0.617  | ✅ PASS                  |
-| four_hier_fp_deloxide_random_default                      | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |         0.6206 | ✅ PASS                  |
-| four_hier_fp_no_deadlocks                                 | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |         1.5021 | ✅ PASS                  |
-| four_hier_fp_parking_lot                                  | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |         0.6157 | ✅ PASS                  |
-| gate_guarded_fp_deloxide                                  | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |         0.4542 | ✅ PASS                  |
-| gate_guarded_fp_deloxide_aggressive                       | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |         0.4637 | ✅ PASS                  |
-| gate_guarded_fp_deloxide_component_based_delays           | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |         0.46   | ✅ PASS                  |
-| gate_guarded_fp_deloxide_gentle                           | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |         0.4545 | ✅ PASS                  |
-| gate_guarded_fp_deloxide_lock_order                       | Traditional FP | Lock Order |      1 |         0 |          0 |                 0 |         0.4508 | ✅ PASS                  |
-| gate_guarded_fp_deloxide_random_default                   | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |         0.4683 | ✅ PASS                  |
-| gate_guarded_fp_no_deadlocks                              | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |         0.4641 | ✅ PASS                  |
-| gate_guarded_fp_parking_lot                               | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |         0.4486 | ✅ PASS                  |
-| lock_free_interval_fp_deloxide                            | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |         1.0066 | ✅ PASS                  |
-| lock_free_interval_fp_deloxide_aggressive                 | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |         1.0221 | ✅ PASS                  |
-| lock_free_interval_fp_deloxide_component_based_delays     | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |         1.0206 | ✅ PASS                  |
-| lock_free_interval_fp_deloxide_gentle                     | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |         1.0321 | ✅ PASS                  |
-| lock_free_interval_fp_deloxide_lock_order                 | Traditional FP | Lock Order |      1 |         0 |          0 |                 0 |         1.0111 | ✅ PASS                  |
-| lock_free_interval_fp_deloxide_random_default             | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |         1.0098 | ✅ PASS                  |
-| lock_free_interval_fp_no_deadlocks                        | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |         1.0182 | ✅ PASS                  |
-| lock_free_interval_fp_parking_lot                         | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |         0.9692 | ✅ PASS                  |
-| lock_order_inversion_fp_deloxide                          | Lock Order FP  | Wait-For   |      1 |         0 |          0 |                 0 |         0.0453 | ✅ PASS                  |
-| lock_order_inversion_fp_deloxide_aggressive               | Lock Order FP  | Wait-For   |      1 |         0 |          0 |                 0 |         0.0501 | ✅ PASS                  |
-| lock_order_inversion_fp_deloxide_component_based_delays   | Lock Order FP  | Wait-For   |      1 |         0 |          0 |                 0 |         0.0533 | ✅ PASS                  |
-| lock_order_inversion_fp_deloxide_gentle                   | Lock Order FP  | Wait-For   |      1 |         0 |          0 |                 0 |         0.0495 | ✅ PASS                  |
-| lock_order_inversion_fp_deloxide_lock_order               | Lock Order FP  | Lock Order |      1 |         1 |          0 |                 0 |         0.0494 | ❌ KNOWN FP (Lock Order) |
-| lock_order_inversion_fp_deloxide_random_default           | Lock Order FP  | Wait-For   |      1 |         0 |          0 |                 0 |         0.0547 | ✅ PASS                  |
-| lock_order_inversion_fp_no_deadlocks                      | Lock Order FP  | Wait-For   |      1 |         0 |          0 |                 0 |         0.049  | ✅ PASS                  |
-| lock_order_inversion_fp_parking_lot                       | Lock Order FP  | Wait-For   |      1 |         0 |          0 |                 0 |         0.0445 | ✅ PASS                  |
-| producer_consumer_fp_deloxide                             | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |         0.6159 | ✅ PASS                  |
-| producer_consumer_fp_deloxide_aggressive                  | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |         0.7035 | ✅ PASS                  |
-| producer_consumer_fp_deloxide_component_based_delays      | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |         0.6621 | ✅ PASS                  |
-| producer_consumer_fp_deloxide_gentle                      | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |         0.6159 | ✅ PASS                  |
-| producer_consumer_fp_deloxide_lock_order                  | Traditional FP | Lock Order |      1 |         0 |          0 |                 0 |         0.6088 | ✅ PASS                  |
-| producer_consumer_fp_deloxide_random_default              | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |         0.7628 | ✅ PASS                  |
-| producer_consumer_fp_no_deadlocks                         | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |         2.8539 | ✅ PASS                  |
-| producer_consumer_fp_parking_lot                          | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |         0.5674 | ✅ PASS                  |
-| read_dominated_fp_deloxide                                | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |         1.8202 | ✅ PASS                  |
-| read_dominated_fp_deloxide_aggressive                     | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |         1.8054 | ✅ PASS                  |
-| read_dominated_fp_deloxide_component_based_delays         | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |         1.8285 | ✅ PASS                  |
-| read_dominated_fp_deloxide_gentle                         | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |         1.8242 | ✅ PASS                  |
-| read_dominated_fp_deloxide_lock_order                     | Traditional FP | Lock Order |      1 |         0 |          0 |                 0 |         1.8336 | ✅ PASS                  |
-| read_dominated_fp_deloxide_random_default                 | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |         1.831  | ✅ PASS                  |
-| read_dominated_fp_no_deadlocks                            | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |         3.5114 | ✅ PASS                  |
-| read_dominated_fp_parking_lot                             | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |         1.689  | ✅ PASS                  |
-| thread_local_hierarchy_fp_deloxide                        | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |        24.1465 | ✅ PASS                  |
-| thread_local_hierarchy_fp_deloxide_aggressive             | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |        25.1566 | ✅ PASS                  |
-| thread_local_hierarchy_fp_deloxide_component_based_delays | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |        24.6767 | ✅ PASS                  |
-| thread_local_hierarchy_fp_deloxide_gentle                 | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |        24.227  | ✅ PASS                  |
-| thread_local_hierarchy_fp_deloxide_lock_order             | Traditional FP | Lock Order |      1 |         0 |          0 |                 0 |        24.1916 | ✅ PASS                  |
-| thread_local_hierarchy_fp_deloxide_random_default         | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |        24.5569 | ✅ PASS                  |
-| thread_local_hierarchy_fp_no_deadlocks                    | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |        45.0234 | ✅ PASS                  |
-| thread_local_hierarchy_fp_parking_lot                     | Traditional FP | Wait-For   |      1 |         0 |          0 |                 0 |        23.3946 | ✅ PASS                  |
+| complex_lock_order_fp_deloxide                            | Lock Order FP  | Wait-For   |     10 |         0 |          0 |                 0 |         0.0626 | ✅ PASS                  |
+| complex_lock_order_fp_deloxide_aggressive                 | Lock Order FP  | Wait-For   |     10 |         0 |          0 |                 0 |         0.084  | ✅ PASS                  |
+| complex_lock_order_fp_deloxide_component_based_delays     | Lock Order FP  | Wait-For   |     10 |         0 |          0 |                 0 |         0.0744 | ✅ PASS                  |
+| complex_lock_order_fp_deloxide_gentle                     | Lock Order FP  | Wait-For   |     10 |         0 |          0 |                 0 |         0.0631 | ✅ PASS                  |
+| complex_lock_order_fp_deloxide_lock_order                 | Lock Order FP  | Lock Order |     10 |        10 |          0 |                 0 |         0.0622 | ❌ KNOWN FP (Lock Order) |
+| complex_lock_order_fp_deloxide_random_default             | Lock Order FP  | Wait-For   |     10 |         0 |          0 |                 0 |         0.0685 | ✅ PASS                  |
+| complex_lock_order_fp_no_deadlocks                        | Lock Order FP  | Wait-For   |     10 |         0 |          0 |                 0 |         0.0641 | ✅ PASS                  |
+| complex_lock_order_fp_parking_lot                         | Lock Order FP  | Wait-For   |     10 |         0 |          0 |                 0 |         0.0583 | ✅ PASS                  |
+| conditional_locking_fp_deloxide                           | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |        25.5706 | ✅ PASS                  |
+| conditional_locking_fp_deloxide_aggressive                | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |        26.1583 | ✅ PASS                  |
+| conditional_locking_fp_deloxide_component_based_delays    | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |        25.907  | ✅ PASS                  |
+| conditional_locking_fp_deloxide_gentle                    | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |        25.6071 | ✅ PASS                  |
+| conditional_locking_fp_deloxide_lock_order                | Traditional FP | Lock Order |     10 |         0 |          0 |                 0 |        25.6138 | ✅ PASS                  |
+| conditional_locking_fp_deloxide_random_default            | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |        25.7458 | ✅ PASS                  |
+| conditional_locking_fp_no_deadlocks                       | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |       641.279  | ✅ PASS                  |
+| conditional_locking_fp_parking_lot                        | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |        24.1781 | ✅ PASS                  |
+| four_hier_fp_deloxide                                     | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |         0.6635 | ✅ PASS                  |
+| four_hier_fp_deloxide_aggressive                          | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |         0.6762 | ✅ PASS                  |
+| four_hier_fp_deloxide_component_based_delays              | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |         0.6666 | ✅ PASS                  |
+| four_hier_fp_deloxide_gentle                              | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |         0.6658 | ✅ PASS                  |
+| four_hier_fp_deloxide_lock_order                          | Traditional FP | Lock Order |     10 |         0 |          0 |                 0 |         0.6613 | ✅ PASS                  |
+| four_hier_fp_deloxide_random_default                      | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |         0.6716 | ✅ PASS                  |
+| four_hier_fp_no_deadlocks                                 | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |         7.7394 | ✅ PASS                  |
+| four_hier_fp_parking_lot                                  | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |         0.6106 | ✅ PASS                  |
+| gate_guarded_fp_deloxide                                  | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |         0.5166 | ✅ PASS                  |
+| gate_guarded_fp_deloxide_aggressive                       | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |         0.5173 | ✅ PASS                  |
+| gate_guarded_fp_deloxide_component_based_delays           | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |         0.5236 | ✅ PASS                  |
+| gate_guarded_fp_deloxide_gentle                           | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |         0.5248 | ✅ PASS                  |
+| gate_guarded_fp_deloxide_lock_order                       | Traditional FP | Lock Order |     10 |         0 |          0 |                 0 |         0.5245 | ✅ PASS                  |
+| gate_guarded_fp_deloxide_random_default                   | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |         0.5227 | ✅ PASS                  |
+| gate_guarded_fp_no_deadlocks                              | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |         0.5536 | ✅ PASS                  |
+| gate_guarded_fp_parking_lot                               | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |         0.4519 | ✅ PASS                  |
+| lock_free_interval_fp_deloxide                            | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |         1.1012 | ✅ PASS                  |
+| lock_free_interval_fp_deloxide_aggressive                 | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |         1.1118 | ✅ PASS                  |
+| lock_free_interval_fp_deloxide_component_based_delays     | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |         1.1125 | ✅ PASS                  |
+| lock_free_interval_fp_deloxide_gentle                     | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |         1.0983 | ✅ PASS                  |
+| lock_free_interval_fp_deloxide_lock_order                 | Traditional FP | Lock Order |     10 |         0 |          0 |                 0 |         1.1064 | ✅ PASS                  |
+| lock_free_interval_fp_deloxide_random_default             | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |         1.1125 | ✅ PASS                  |
+| lock_free_interval_fp_no_deadlocks                        | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |         1.1022 | ✅ PASS                  |
+| lock_free_interval_fp_parking_lot                         | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |         0.9713 | ✅ PASS                  |
+| lock_order_inversion_fp_deloxide                          | Lock Order FP  | Wait-For   |     10 |         0 |          0 |                 0 |         0.056  | ✅ PASS                  |
+| lock_order_inversion_fp_deloxide_aggressive               | Lock Order FP  | Wait-For   |     10 |         0 |          0 |                 0 |         0.0619 | ✅ PASS                  |
+| lock_order_inversion_fp_deloxide_component_based_delays   | Lock Order FP  | Wait-For   |     10 |         0 |          0 |                 0 |         0.0594 | ✅ PASS                  |
+| lock_order_inversion_fp_deloxide_gentle                   | Lock Order FP  | Wait-For   |     10 |         0 |          0 |                 0 |         0.0554 | ✅ PASS                  |
+| lock_order_inversion_fp_deloxide_lock_order               | Lock Order FP  | Lock Order |     10 |        10 |          0 |                 0 |         0.0555 | ❌ KNOWN FP (Lock Order) |
+| lock_order_inversion_fp_deloxide_random_default           | Lock Order FP  | Wait-For   |     10 |         0 |          0 |                 0 |         0.0564 | ✅ PASS                  |
+| lock_order_inversion_fp_no_deadlocks                      | Lock Order FP  | Wait-For   |     10 |         0 |          0 |                 0 |         0.0546 | ✅ PASS                  |
+| lock_order_inversion_fp_parking_lot                       | Lock Order FP  | Wait-For   |     10 |         0 |          0 |                 0 |         0.0502 | ✅ PASS                  |
+| producer_consumer_fp_deloxide                             | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |         0.7014 | ✅ PASS                  |
+| producer_consumer_fp_deloxide_aggressive                  | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |         0.7272 | ✅ PASS                  |
+| producer_consumer_fp_deloxide_component_based_delays      | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |         0.7194 | ✅ PASS                  |
+| producer_consumer_fp_deloxide_gentle                      | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |         0.7052 | ✅ PASS                  |
+| producer_consumer_fp_deloxide_lock_order                  | Traditional FP | Lock Order |     10 |         0 |          0 |                 0 |         0.701  | ✅ PASS                  |
+| producer_consumer_fp_deloxide_random_default              | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |         0.7265 | ✅ PASS                  |
+| producer_consumer_fp_no_deadlocks                         | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |         4.7947 | ✅ PASS                  |
+| producer_consumer_fp_parking_lot                          | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |         0.5967 | ✅ PASS                  |
+| read_dominated_fp_deloxide                                | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |         2.0295 | ✅ PASS                  |
+| read_dominated_fp_deloxide_aggressive                     | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |         2.0622 | ✅ PASS                  |
+| read_dominated_fp_deloxide_component_based_delays         | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |         2.0685 | ✅ PASS                  |
+| read_dominated_fp_deloxide_gentle                         | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |         2.046  | ✅ PASS                  |
+| read_dominated_fp_deloxide_lock_order                     | Traditional FP | Lock Order |     10 |         0 |          0 |                 0 |         2.0487 | ✅ PASS                  |
+| read_dominated_fp_deloxide_random_default                 | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |         2.0682 | ✅ PASS                  |
+| read_dominated_fp_no_deadlocks                            | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |        21.1244 | ✅ PASS                  |
+| read_dominated_fp_parking_lot                             | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |         1.7951 | ✅ PASS                  |
+| thread_local_hierarchy_fp_deloxide                        | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |        25.5997 | ✅ PASS                  |
+| thread_local_hierarchy_fp_deloxide_aggressive             | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |        26.6339 | ✅ PASS                  |
+| thread_local_hierarchy_fp_deloxide_component_based_delays | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |        26.1363 | ✅ PASS                  |
+| thread_local_hierarchy_fp_deloxide_gentle                 | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |        25.683  | ✅ PASS                  |
+| thread_local_hierarchy_fp_deloxide_lock_order             | Traditional FP | Lock Order |     10 |         0 |          0 |                 0 |        25.6736 | ✅ PASS                  |
+| thread_local_hierarchy_fp_deloxide_random_default         | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |        25.9105 | ✅ PASS                  |
+| thread_local_hierarchy_fp_no_deadlocks                    | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |       303.949  | ✅ PASS                  |
+| thread_local_hierarchy_fp_parking_lot                     | Traditional FP | Wait-For   |     10 |         0 |          0 |                 0 |        22.7894 | ✅ PASS                  |
 
 ## Interpretation
 
@@ -104,9 +104,9 @@ This analysis verifies two types of false positive tests:
   - False positives: 0
 - **Lock Order FP tests**: 16
   - Total false positives: 0
-  - Known FP (lock order detectors): 2
+  - Known FP (lock order detectors): 20
   - Unexpected FP (wait-for detectors): 0
-- **Total false positives across all tests**: 2
+- **Total false positives across all tests**: 20
 
 ## Analysis
 

@@ -1,0 +1,14 @@
+/Users/emivvvvv/Documents/GitHub/deloxide-deadlock-tests/target/release/deps/serde-0441a0aeda6406f2.d: /Users/emivvvvv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/emivvvvv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/emivvvvv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/emivvvvv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/emivvvvv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/emivvvvv/Documents/GitHub/deloxide-deadlock-tests/target/release/build/serde-af996babb7c56a92/out/private.rs
+
+/Users/emivvvvv/Documents/GitHub/deloxide-deadlock-tests/target/release/deps/libserde-0441a0aeda6406f2.rlib: /Users/emivvvvv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/emivvvvv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/emivvvvv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/emivvvvv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/emivvvvv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/emivvvvv/Documents/GitHub/deloxide-deadlock-tests/target/release/build/serde-af996babb7c56a92/out/private.rs
+
+/Users/emivvvvv/Documents/GitHub/deloxide-deadlock-tests/target/release/deps/libserde-0441a0aeda6406f2.rmeta: /Users/emivvvvv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/emivvvvv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/emivvvvv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/emivvvvv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/emivvvvv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/emivvvvv/Documents/GitHub/deloxide-deadlock-tests/target/release/build/serde-af996babb7c56a92/out/private.rs
+
+/Users/emivvvvv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs:
+/Users/emivvvvv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs:
+/Users/emivvvvv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs:
+/Users/emivvvvv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs:
+/Users/emivvvvv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs:
+/Users/emivvvvv/Documents/GitHub/deloxide-deadlock-tests/target/release/build/serde-af996babb7c56a92/out/private.rs:
+
+# env-dep:OUT_DIR=/Users/emivvvvv/Documents/GitHub/deloxide-deadlock-tests/target/release/build/serde-af996babb7c56a92/out

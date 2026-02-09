@@ -287,8 +287,6 @@ dependencies = [
 [[package]]
 name = "deloxide"
 version = "1.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3911e98c3d9d7c9b36c3f4104f9fbc721011d9f8e6596556e30ad3cd7f03b550"
 dependencies = [
  "anyhow",
  "base64",

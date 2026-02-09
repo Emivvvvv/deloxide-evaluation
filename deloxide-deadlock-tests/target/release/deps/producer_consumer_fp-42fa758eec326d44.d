@@ -1,0 +1,5 @@
+/Users/emivvvvv/Documents/GitHub/deloxide-deadlock-tests/target/release/deps/producer_consumer_fp-42fa758eec326d44.d: src/bin/producer_consumer_fp.rs
+
+/Users/emivvvvv/Documents/GitHub/deloxide-deadlock-tests/target/release/deps/producer_consumer_fp-42fa758eec326d44: src/bin/producer_consumer_fp.rs
+
+src/bin/producer_consumer_fp.rs:

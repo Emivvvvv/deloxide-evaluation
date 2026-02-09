@@ -1,0 +1,12 @@
+/Users/emivvvvv/Documents/GitHub/deloxide-deadlock-tests/target/debug/deps/serde-f4785397a4cb2354.d: /Users/emivvvvv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/emivvvvv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/emivvvvv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/emivvvvv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/emivvvvv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/emivvvvv/Documents/GitHub/deloxide-deadlock-tests/target/debug/build/serde-2d91f1bc73869294/out/private.rs
+
+/Users/emivvvvv/Documents/GitHub/deloxide-deadlock-tests/target/debug/deps/libserde-f4785397a4cb2354.rmeta: /Users/emivvvvv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/emivvvvv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/emivvvvv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/emivvvvv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/emivvvvv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/emivvvvv/Documents/GitHub/deloxide-deadlock-tests/target/debug/build/serde-2d91f1bc73869294/out/private.rs
+
+/Users/emivvvvv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs:
+/Users/emivvvvv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs:
+/Users/emivvvvv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs:
+/Users/emivvvvv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs:
+/Users/emivvvvv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs:
+/Users/emivvvvv/Documents/GitHub/deloxide-deadlock-tests/target/debug/build/serde-2d91f1bc73869294/out/private.rs:
+
+# env-dep:OUT_DIR=/Users/emivvvvv/Documents/GitHub/deloxide-deadlock-tests/target/debug/build/serde-2d91f1bc73869294/out
